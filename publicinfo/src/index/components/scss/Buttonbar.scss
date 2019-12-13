@@ -1,0 +1,65 @@
+.Buttonbar-all {
+    background: #ffffff;
+    height: 50px;
+    position: relative;
+    box-shadow: 0px 7px 1px -5px #ddd;
+
+    & .Buttonbar-middle {
+        position: relative;
+        height: 50px;
+        width: 1200px;
+        margin: 0 auto;
+        z-index: 100;
+
+        & span {
+            cursor: pointer;
+            display: inline-block;
+            float: right;
+            width: 118px;
+            height: 28px;
+            line-height: 28px;
+            margin: 11px 0;
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #ffffff;
+            text-align: center;
+            margin-left:12px ;
+            & i {
+                font-style: normal;
+                font-size: 14px;
+            }
+        }
+
+        & span:hover {
+            opacity: 0.9;
+        }
+
+        & .red {
+
+            background-image: linear-gradient(90deg,
+                    #ff593e 0%,
+                    #ff1b10 100%),
+                linear-gradient(#ffffff,
+                    #ffffff);
+            background-blend-mode: normal,
+                normal;
+            border-radius: 12px;
+        }
+
+        & .blue {
+            background-image: linear-gradient(90deg,
+                    #0fc1fc 0%,
+                    #1da4fe 100%),
+                linear-gradient(#ffffff,
+                    #ffffff);
+            background-blend-mode: normal,
+                normal;
+            border-radius: 14px;
+          
+            box-shadow: 0px 0px 3px 0px #000000;
+        }
+    }
+}

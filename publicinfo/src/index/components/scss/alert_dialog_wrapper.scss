@@ -1,0 +1,113 @@
+.alert_dialog_tab #alert_dialog_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 450px;
+    max-width: 450px;
+    background-color: #fff;
+}
+.alert_dialog_tab .border {
+    box-shadow: 0 0 16px 0 rgba(3,0,0,.16);
+}
+.alert_dialog_tab {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10101;
+    padding: 0;
+}
+.alert_dialog_tab .alert_close_btn {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url('../images/popup-remind/popup-close.png') no-repeat;
+  
+}
+.alert_dialog_tab .alert_close_btn:hover{
+    background: url('../images/popup-remind/popup-close-hover.png') no-repeat;
+}
+.alert_dialog_content {
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -ms-flex-align: center;
+    padding: 50px 30px 0;
+}
+.alert_dialog_content .left-icon.btn-query {
+    background-image: url('../images/popup-remind/remind.png');
+   
+}
+.alert_dialog_content .left-icon {
+    background-repeat: no-repeat;
+    background-position: 0;
+    width: 46px;
+    height: 42px;
+    margin-left: -10px;
+    margin-right: 6px;
+}
+.alert_dialog_msg {
+    max-width: 440px;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #333;
+    word-break: break-all;
+}
+.alert_dialog_footer {
+    display: flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    -ms-flex-pack: center;
+    margin-top: 38px;
+    padding-bottom: 12px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 1.5;
+    
+}
+.alert_dialog_footer i:nth-child(1) {
+    background-image: url('../images/popup-remind/true.png');
+}
+.alert_dialog_footer i:nth-child(1):hover{
+    background-image: url('../images/popup-remind/true-hover.png');
+}
+.alert_dialog_footer i {
+    font-style: normal;
+    display: inline-block;
+    border: none;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 108px;
+    height: 42px;
+    line-height: 32px;
+    color: #fff;
+    outline: none;
+    border-radius: 16px;
+    font-size: 16px;
+    // box-shadow: 0 7px 22px -6px #5dcbfe;
+    cursor: pointer;
+    text-align: center;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+}
+.alert_dialog_footer i:nth-child(2) {
+    margin-left: 12px;
+    color: #09f;
+    background-image: url('../images/popup-remind/false.png');
+}
+.alert_dialog_footer i:nth-child(2):hover{
+    background-image: url('../images/popup-remind/false-hover.png');
+}

@@ -1,0 +1,101 @@
+.NoticeTemplate-head {
+    position: relative;
+    margin: 19px 39px 9px 28px;
+
+    span {
+        font-family: MicrosoftYaHei;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 50px;
+        letter-spacing: 0px;
+        color: #333333;
+
+        i {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url("../images/标题图标_已发通知.png");
+            margin:2px 8px 0 0 ;
+            vertical-align: text-top;
+
+        }
+    }
+
+    span:nth-child(2) {
+        float: right;
+        font-family: MicrosoftYaHei;
+        text-decoration: underline;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #0099ff;
+        cursor: pointer;
+
+        i {
+            width: 12px;
+            height: 12px;
+            background: url("../images/添加模板.png");
+            vertical-align: inherit;
+            margin: -2px 4px 0 0;
+        }
+    }
+
+    span:nth-child(2):hover {
+        color: #FF6600;
+
+        i {
+
+            background: url("../images/添加模板-经过.png");
+
+        }
+    }
+
+   
+}
+.button-td {
+    i {
+        display: inline-block;
+        width: 56px;
+        height: 24px;
+        background-color: #ffffff;
+        background-image: url('../images/列表操作-预览.png');
+        cursor: pointer;
+        font-family: MicrosoftYaHei;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+    color: #0099ff;
+    font-style: normal;
+    margin: 0 3px 0 0;
+    line-height: 24px;
+    }
+    i:hover{
+        background-image: url('../images/列表操作-预览-悬停.png');
+        color: #fff;
+    }
+    i:last-child{
+        background-image: url('../images/列表操作-删除.png');
+        color: #f00;
+    }
+    i:last-child:hover{
+        background-image: url('../images/列表操作-删除-悬停.png');
+        color: #fff;
+    }
+
+}
+ .Template-title-label .Template-title-span{
+    text-align:left;
+    width: 40px;
+}
+.sidebar-all .sidebar-middle .Noticeissued-all .NoticeTemplate-tbody td:nth-child(1){
+    color: #333333;
+}
+.Template-content{
+    img{
+        max-width: 90%;
+        max-height: 400px;
+    }
+}
