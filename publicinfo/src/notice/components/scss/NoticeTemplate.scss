@@ -1,0 +1,238 @@
+.NoticeTemplate-box {
+    position: relative;
+    top: 16px;
+    width: 1200px;
+    margin: 0 auto;
+    z-index: 100;
+    background: #f5f5f5;
+    height: 696px;
+
+    .NoticeTemplate-all {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        width: 1200px;
+        height: 680px;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.03);
+        border-radius: 12px;
+
+        .NoticeTemplate-head {
+            position: relative;
+            margin: 19px 39px 9px 28px;
+
+            .Template-button {
+                cursor: pointer;
+                display: inline-block;
+                width: 105px;
+                height: 28px;
+                background-image: linear-gradient(90deg, #0fc1fc 0%, #1da4fe 100%), linear-gradient(#ffffff, #ffffff);
+                background-blend-mode: normal, normal;
+                border-radius: 14px;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #ffffff;
+                line-height: 28px;
+                text-align: center;
+
+
+                i {
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('../images/createNotice.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    vertical-align: middle;
+                    margin: -5px 2px 0 0;
+
+
+                }
+
+            }
+
+            .search-div {
+                float: right;
+            }
+
+            // span:nth-child(1) {
+
+            //     font-family: MicrosoftYaHei;
+            //     text-decoration: underline;
+            //     font-size: 14px;
+            //     font-weight: normal;
+            //     font-stretch: normal;
+            //     letter-spacing: 0px;
+            //     color: #0099ff;
+            //     cursor: pointer;
+
+            //     i {
+            //         width: 12px;
+            //         height: 12px;
+            //         background: url("../images/createNotice1.png");
+            //         vertical-align: inherit;
+            //         margin: -2px 4px 0 0;
+            //     }
+            // }
+
+            // span:nth-child(1):hover {
+            //     color: #FF6600;
+
+            //     i {
+
+            //         background: url("../images/createNotice-hover.png");
+
+            //     }
+            // }
+
+
+        }
+
+        .Template-border {
+            width: 1136px;
+            border-bottom: 1px dashed #ccc;
+            margin-left: 32px;
+        }
+        
+        .Template-table {
+            width: 96%;
+            margin: 0 32px 32px 32px;
+            thead {
+                background-color: #f5f5f5;
+                height: 28px;
+                line-height: 28px;
+
+                th:nth-child(1) {
+                    padding-left: 43px;
+                    text-align: left;
+                }
+
+                th {
+                    text-align: center;
+                }
+            }
+
+            tbody {
+                height: 48px;
+                line-height: 48px;
+
+                td:nth-child(1) {
+                    // padding-left: 43px;
+                    text-align: left;
+                    color: #0099ff;
+
+                    i {
+                        display: inline-block;
+                        width: 6px;
+                        height: 6px;
+                        background-color: #b8b8b8;
+                        border-radius: 3px;
+                        margin: -4px 15px 0 21px;
+                        vertical-align: middle;
+                    }
+                    span{
+                        cursor: pointer;
+                    }
+                }
+
+                td {
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    text-align: center;
+                    color: #999999;
+                }
+                tr:hover{
+                    background-color: #ebebeb;
+                }
+            }
+        }
+
+        .button-td {
+            i {
+                display: inline-block;
+                width: 56px;
+                height: 24px;
+                background-color: #ffffff;
+                background-image: url('../images/列表操作-预览.png');
+                cursor: pointer;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #0099ff;
+                font-style: normal;
+                margin: 0 3px 0 0;
+                line-height: 24px;
+
+            }
+
+            i:hover {
+                background-image: url('../images/列表操作-预览-悬停.png');
+                color: #fff;
+            }
+
+            i:last-child {
+                background-image: url('../images/列表操作-删除.png');
+                color: #f00;
+            }
+
+            i:last-child:hover {
+                background-image: url('../images/列表操作-删除-悬停.png');
+                color: #fff;
+            }
+
+        }
+
+        .Template-title-label .Template-title-span {
+            text-align: left;
+            width: 40px;
+        }
+
+        .sidebar-all .sidebar-middle .Noticeissued-all .NoticeTemplate-tbody td:nth-child(1) {
+            color: #333333;
+        }
+
+        .Template-content {
+            max-height: 520px;
+            min-height: 400px;
+            overflow-y: scroll;
+
+            img {
+                max-width: 90%;
+            }
+        }
+    }
+}
+.notice-null{
+    text-align: center;
+    .null-img {
+        display: inline-block;
+        width: 343px;
+        height: 299px;
+        margin: 100px 0 0 0;
+        background-image: url('../images/search-null.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+.NoticeTemplate-main{
+    min-height: 545px;
+   
+}
+.Template-title-label{
+    .Template-title-span{
+        width: 32px;
+    }
+}
+#editor1,#editor2{
+    display: inline-block;
+}

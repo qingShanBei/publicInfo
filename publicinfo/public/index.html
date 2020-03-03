@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+  <link rel="icon" href="./favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="./favicon.ico" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,18 +23,26 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-    <script type="text/javascript" charset="utf-8" src="http://192.168.129.75:8080/Message/UEditor/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="http://192.168.129.75:8080/Message/UEditor/WebUploader.js"></script>
-    <script type="text/javascript" charset="utf-8" src="http://192.168.129.75:8080/Message/UEditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="http://192.168.129.75:8080/Message/UEditor/ueditor.all.js"></script>
-    <script type="text/javascript" charset="utf-8" src="http://192.168.129.75:8080/Message/UEditor/lang/zh-cn/zh-cn.js"></script>
+  <title>通知公告</title>
+  <!-- <script type="text/javascript" charset="utf-8" src="http://192.168.129.75:8080/Message/UEditor/jquery-1.7.2.min.js">
+  </script>
+  <script type="text/javascript" charset="utf-8" src="http://192.168.129.75:8080/Message/UEditor/WebUploader.js">
+  </script>
+  <script type="text/javascript" charset="utf-8" src="http://192.168.129.75:8080/Message/UEditor/ueditor.config.js">
+  </script>
+  <script type="text/javascript" charset="utf-8" src="http://192.168.129.75:8080/Message/UEditor/ueditor.all.js">
+  </script>
+  <script type="text/javascript" charset="utf-8" src="http://192.168.129.75:8080/Message/UEditor/lang/zh-cn/zh-cn.js">
+  </script> -->
+  
 
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -45,7 +52,74 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-   
-  </body>
 
+</body>
+<script>
+  if(window.location.href.split('?')[0].indexOf('html/notice/html/notice/')>-1){
+   return;
+  }
+  var url=window.location.href.split('?')[0]+'html/notice/?'+window.location.href.split('?')[1];
+  window.open(url,'_self');
+  // var url = window.location.href.split('?')[0].slice(7, window.location.href.split('?')[0].length);
+  // var url2 = url.slice(0, url.indexOf('/'));
+  // //同步引入动态js和css函数
+  // function loadScriptOrCss(urlArr, num) {
+  //   if (!num) {
+  //     num = 0;
+  //   }
+  //   //正则判断是否是css;
+  //   var reg = RegExp(/.css/);
+
+  //   if (reg.test(urlArr[num])) {
+  //     // 动态生成css
+  //     var scriptOrCss = document.createElement('link');
+  //     scriptOrCss.type = 'text/css';
+  //     scriptOrCss.async = 'async';
+  //     scriptOrCss.href = urlArr[num];
+  //     scriptOrCss.rel = "stylesheet";
+  //     document.getElementsByTagName("head")[0].appendChild(scriptOrCss);
+
+  //   } else {
+  //     // 动态生成js
+  //     var scriptOrCss = document.createElement('script');
+  //     scriptOrCss.type = 'text/javascript';
+  //     scriptOrCss.async = 'async';
+  //     scriptOrCss.src = urlArr[num];
+  //     document.body.appendChild(scriptOrCss);
+  //   }
+  //   if (scriptOrCss.readyState) {
+  //     //IE下
+  //     scriptOrCss.onreadystatechange = function () {
+  //       if (scriptOrCss.readyState == 'complete' || scriptOrCss.readyState == 'loaded') {
+  //         scriptOrCss.onreadystatechange = null;
+  //         num++;
+  //         if (num == urlArr.length) {
+  //           return;
+  //         } else {
+  //           loadScriptOrCss(urlArr, num);
+  //         }
+  //       }
+  //     }
+  //   } else {
+  //     //其他浏览器
+  //     scriptOrCss.onload = function () {
+  //       num++;
+  //       if (num == urlArr.length) {
+  //         return;
+  //       } else {
+  //         loadScriptOrCss(urlArr, num);
+  //       }
+  //     }
+  //   }
+  // }
+  // if(url2.indexOf('localhost:')>-1){
+  //   url2='192.168.129.75:8080';
+  // }
+  // loadScriptOrCss(['http://' + url2 + '/publicinfo/WebPage/UEditor/jquery-1.7.2.min.js',
+  //   'http://' + url2 + '/publicinfo/WebPage/UEditor/WebUploader.js', 'http://' + url2 + '/publicinfo/WebPage/UEditor/ueditor.config.js',
+  //   'http://' + url2 + '/publicinfo/WebPage/UEditor/ueditor.all.js', 'http://' + url2 +
+  //   '/publicinfo/WebPage/UEditor/lang/zh-cn/zh-cn.js'
+
+  // ]);
+</script>
 </html>

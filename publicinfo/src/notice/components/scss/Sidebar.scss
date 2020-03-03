@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-all {
+    background: #f5f5f5;
+    height: 696px;
+    position: relative;
+    z-index: 1;
+    .sidebar-middle {
+        position: relative;
+        top: 16px;
+        width: 1200px;
+        margin: 0 auto;
+        z-index: 100;
+
+        .Noticeissued-all {
+            position: absolute;
+            right: 0;
+            top: 0px;
+            width: 1200px;
+            height: 680px;
+            background-color: #ffffff;
+            box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.03);
+            border-radius: 12px;
+
+            .Noticeissued-head {
+                position: relative;
+                margin: 19px 39px 9px 28px;
+
+                .Noticeissued-button {
+                    cursor: pointer;
+                    display: inline-block;
+                    width: 125px;
+                    height: 28px;
+                    background-image: linear-gradient(90deg,
+                            #0fc1fc 0%,
+                            #1da4fe 100%),
+                        linear-gradient(#ffffff,
+                            #ffffff);
+                    background-blend-mode: normal,
+                        normal;
+                    border-radius: 14px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+                    line-height: 28px;
+                    text-align: center;
+
+                    i {
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        background-image: url('../images/createNotice.png');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        vertical-align: middle;
+                        margin: -5px 2px 0 0;
+                    }
+
+                }
+
+                .Noticeissued-button:hover {
+                    opacity: 0.9;
+                }
+                .Noticeissued-Template-button{
+                    margin-left: 20px;
+                   cursor: pointer;
+                  
+                    b{  font-family: MicrosoftYaHei;
+                        font-size: 14px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0px;
+                        text-decoration: underline;
+                        color: #0099ff;
+                    }
+                    i{
+                        display: inline-block;
+                        width: 14px;
+                        height: 14px;
+                        background-image: url('../images/setup.png');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        vertical-align: middle;
+                        margin-top: -4px;
+                    }
+                    
+                }
+                .Noticeissued-Template-button:hover{
+                    b{
+                        color: #ff6600;
+                    }
+                    i{
+                        background-image: url('../images/setup-hover.png');
+                    }
+                }
+                .search-div {
+                    float: right;
+
+                }
+
+
+            }
+
+            .Noticeissued-border {
+                width: 1144px;
+                height: 1px;
+                margin: 0 0 13px 29px;
+                border-top: dashed 1px #cccccc;
+            }
+
+            table {
+                margin: 0 36px;
+                width: 1128px;
+                border: 0;
+                border-collapse: collapse;
+            }
+
+            thead tr:nth-child(1) {
+                width: 100%;
+                height: 28px;
+                background-color: #f5f5f5;
+                line-height: 28px;
+            }
+
+            th {
+
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #647e86;
+
+            }
+
+            tr:nth-child(1) th:nth-child(1) {
+                text-align: left;
+                padding-left: 35px;
+            }
+
+            tr {
+                width: 1128px;
+                height: 48px;
+                background-color: #ffffff;
+                box-shadow: 0px 1px 0px 0px #ebebeb;
+                text-align: center;
+            }
+
+            tr td {
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #999999;
+            }
+
+            tr td:nth-child(1) {
+                color: #0099ff;
+                text-align: left;
+            }
+
+            tr td:nth-child(2) {
+                color: #666666;
+            }
+
+            tr td:nth-child(5) {
+                color: #333333;
+            }
+
+            tr td:nth-child(1) .notice-push-i {
+                display: inline-block;
+                width: 48px;
+                height: 20px;
+                background-color: #53bb53;
+                border-radius: 3px;
+                margin: 0 12px 0 20px;
+                font-style: normal;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #ffffff;
+                line-height: 20px;
+                text-align: center;
+            }
+
+            tr td:nth-child(1) .notice-remove-i {
+                display: inline-block;
+                width: 48px;
+                height: 20px;
+                border-radius: 3px;
+                margin: 0 12px 0 20px;
+                font-style: normal;
+                font-family: MicrosoftYaHei;
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #ffffff;
+                line-height: 20px;
+                text-align: center;
+                background-color: #ea5b5b;
+            }
+
+            tr td:nth-child(1) .Noticeissued-Attachment {
+                display: inline-block;
+                width: 8px;
+                height: 17px;
+                vertical-align: text-bottom;
+                background-image: url('../images/Attachment.png');
+            }
+
+            tbody tr:hover {
+                background: #ebebeb;
+            }
+
+            .notice-remove {
+                display: inline-block;
+                width: 56px;
+                height: 24px;
+                background-color: #ffffff;
+                border-style: solid;
+                border-width: 1px;
+                // border-image-source: linear-gradient(90deg, 
+                //     #008aff 0%, 
+                //     #40cbff 100%);
+                // border-image-slice: 1;
+                border-color: #40cbff;
+                line-height: 22px;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #0099ff;
+                cursor: pointer;
+            }
+            .notice-del{
+                margin-left: 1px;
+                border-color: #ff593e;
+                color: #d71c1c;
+            }
+            .NoticeList-tilte{
+                cursor: pointer;
+            }
+            .notice-remove:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .notice-details {
+            position: relative;
+
+        }
+
+        .notice-details i {
+
+            display: inline-block;
+            width: 14px;
+            height: 10px;
+            background: url('../images/列表操作_详情.png');
+            cursor: pointer;
+        }
+
+        .notice-details i:hover {
+            background: url('../images/列表操作_详情-悬停.png');
+        }
+
+        .notice-null .null-img {
+            display: inline-block;
+            width: 343px;
+            height: 299px;
+            margin: 100px 0 0 0;
+            background-image: url('../images/search-null.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .notice-null p {
+            position: absolute;
+            text-align: center;
+            font-family: MicrosoftYaHei;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 48px;
+            letter-spacing: 0px;
+            color: #999999;
+            top: 407px;
+            /* left: 351px; */
+            width: 100%;
+        }
+    }
+
+    .notice-ant-Pagination {
+        position: absolute;
+        bottom: 25px;
+        left: 49%;
+        transform: translate(-50%, 0);
+    }
+}
+
+.sidebar-button {
+    width: 131px;
+    height: 35px;
+    overflow: hidden;
+    display: inline-block;
+
+    .Buttonbar-all {
+        left: -1074px;
+        top: -8px;
+    }
+}
+.showhtml-Template .ant-modal-body{
+    min-height: 400px;
+    max-width: 500px;
+    overflow-y:scroll ;
+}

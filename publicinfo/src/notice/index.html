@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>通知公告</title>
+	<link rel="icon" href="../../favicon.ico" />
+	
+</head>
+
+<body>
+	<div id="root"></div>
+
+</body>
+
+<script>
+	var url = window.location.href.split('?')[0].slice(7, window.location.href.split('?')[0].length);
+	var url2 = url.slice(0, url.indexOf('/'));
+	//同步引入动态js和css函数
+	function loadScriptOrCss(urlArr, num) {
+	  if (!num) {
+		num = 0;
+	  }
+	  //正则判断是否是css;
+	  var reg = RegExp(/.css/);
+  
+	  if (reg.test(urlArr[num])) {
+		// 动态生成css
+		var scriptOrCss = document.createElement('link');
+		scriptOrCss.type = 'text/css';
+		scriptOrCss.async = 'async';
+		scriptOrCss.href = urlArr[num];
+		scriptOrCss.rel = "stylesheet";
+		document.getElementsByTagName("head")[0].appendChild(scriptOrCss);
+  
+	  } else {
+		// 动态生成js
+		var scriptOrCss = document.createElement('script');
+		scriptOrCss.type = 'text/javascript';
+		scriptOrCss.async = 'async';
+		scriptOrCss.src = urlArr[num];
+		document.body.appendChild(scriptOrCss);
+	  }
+	  if (scriptOrCss.readyState) {
+		//IE下
+		scriptOrCss.onreadystatechange = function () {
+		  if (scriptOrCss.readyState == 'complete' || scriptOrCss.readyState == 'loaded') {
+			scriptOrCss.onreadystatechange = null;
+			num++;
+			if (num == urlArr.length) {
+			  return;
+			} else {
+			  loadScriptOrCss(urlArr, num);
+			}
+		  }
+		}
+	  } else {
+		//其他浏览器
+		scriptOrCss.onload = function () {
+		  num++;
+		  if (num == urlArr.length) {
+			return;
+		  } else {
+			loadScriptOrCss(urlArr, num);
+		  }
+		}
+	  }
+	}
+	if(url2.indexOf('localhost:')>-1){
+	  url2='http://192.168.129.75:8080';
+	  loadScriptOrCss(['http://192.168.129.75:8080/publicinfo/WebPage/UEditor/jquery-1.7.2.min.js',
+	  'http://192.168.129.75:8080/publicinfo/WebPage/UEditor/WebUploader.js', 'http://192.168.129.75:8080/publicinfo/WebPage/UEditor/ueditor.config.js',
+	  'http://192.168.129.75:8080/publicinfo/WebPage/UEditor/ueditor.all.js', 'http://192.168.129.75:8080/publicinfo/WebPage/UEditor/lang/zh-cn/zh-cn.js'
+  
+	]);
+	}else{
+		loadScriptOrCss(['../../UEditor/jquery-1.7.2.min.js',
+	  '../../UEditor/WebUploader.js', '../../UEditor/ueditor.config.js',
+	  '../../UEditor/ueditor.all.js', '../../UEditor/lang/zh-cn/zh-cn.js'
+  
+	]);
+	}
+  </script>
+</html>

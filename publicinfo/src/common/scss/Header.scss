@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.notice-header {
+    position: relative;
+    height:150px;
+    min-width: 1200px;
+    background-image: url('../images/headerBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .notice-header-top {
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 0px 0px rgba(51, 51, 51, 0.2);
+        color: #fefefe;
+        font-size: 16px;
+        .box-middle {
+            position: relative;
+            height: 100px;
+            width: 1200px;
+            margin: 0 auto;
+            z-index: 100;
+            &>.login_logo {
+                display: inline-block;
+                width: 36px;
+                height: 24px;
+                position: relative;
+                top: 5px;
+                background-image: url('../images/中小学一体化学科教育云.png');
+            }
+            &>span{
+                cursor: pointer;
+            }
+            & span {
+                display: inline-block;
+                vertical-align: top;
+                line-height: 40px;
+                margin-left: 12px;
+                color: #fff;
+            }
+
+            & .notice-header-right {
+
+                display: inline-block;
+                float: right;
+
+                & #Assistant_infoCenter {
+                    position: relative;
+                    /* 宽高可按项目自行设计 宽高比为一比一 */
+                    width: 18px;
+                    height: 18px;
+                    display: inline-block;
+                    margin: 10px -4px 0 0;
+                    top: 2px;
+                    /*不要给#Assistant_infoCenter设置背景图片 其他样式不做要求,可自行设置 */
+                }
+                & .notice-header-border {
+                    width: 1px;
+                    height: 24px;
+                    background-image: linear-gradient(0deg,
+                            #ffffff 0%,
+                            #ffffff 50%,
+                            #ffffff 100%),
+                        linear-gradient(#d2f3fe,
+                            #d2f3fe);
+                    background-blend-mode: normal,
+                        normal;
+                    opacity: 0.32;
+                    position: relative;
+                    display: inline-block;
+                    margin: 0px 13px;
+                    top: 5px;
+                }
+
+                & .notice-header-sculpture {
+                    width: 24px;
+                    height: 24px;
+                    position: relative;
+                    display: inline-block;
+                    border-radius: 50%;
+
+                    top: 6px;
+                    overflow: hidden;
+                    background-size: contain;
+                    background-position: center;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        padding: 0;
+                        margin: 0;
+                      
+                    }
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.9;
+                    }
+                }
+
+                & .notice-header-name {
+                    position: relative;
+                    display: inline-block;
+                    line-height: 40px;
+                    margin-left: 6px;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                }
+
+                & i {
+                    top: 2px;
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    background: url('../images/用户信息_退出登录.png');
+                    position: relative;
+                    margin-left: 4px;
+                    cursor: pointer;
+                }
+                & i:hover {
+                    background: url('../images/用户信息_退出登录【经过】.png');
+                }
+            }
+
+
+        }
+
+        .notice-header-logn {
+            display: inline-block;
+            width: 124px;
+            height: 94px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+            top: 16px;
+            left: 31px;
+        }
+        .noticeHeader{
+            background-image: url('../images/noticeHeader.png');
+        }
+        .QueHeader{
+            background-image: url('../images/QueHeader.png');
+        }
+        .newsHeader{
+            background-image: url('../images/newsHeader.png');
+        }
+        .notice-header-title {
+            display: inline-block;
+            position: absolute;
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 48px;
+            letter-spacing: 0px;
+            color: #fff;
+            top: 62px;
+            left: 100px;
+
+        }
+
+        .notice-header-title1 {
+            display: inline-block;
+            position: absolute;
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 48px;
+            letter-spacing: 0px;
+            color: #fff;
+            opacity: 0.8;
+            top: 87px;
+            left: 100px;
+
+        }
+    }
+
+}
+.header-litle{
+    position: relative;
+    top: 23px;
+    left: 76px;
+    font-size: 18px;
+    opacity: 0.72;
+}
+.ueditor-span{
+    margin-right: 9px;
+    vertical-align: top;
+}

@@ -1,0 +1,209 @@
+.clearfix:after {
+    /*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin-top: 400px;
+    text-align: center;
+    z-index: 1080;
+    background: rgba(255, 255, 255, 0.3);
+
+    .loading-size {
+        transform: scale(2.2);
+        font-size: 12px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: auto !important;
+}
+
+// ant分页
+html body .App .ant-pagination-item-active {
+    background-color: #379ef5;
+    border-radius: 3px;
+    border: solid 1px #379ef5;
+}
+
+html body .App .ant-pagination-item-active a {
+    color: #fff;
+}
+
+html body .App .ant-pagination-item-active a:hover {
+    color: #fff;
+}
+
+// ::-webkit-scrollbar {
+//     display: none;
+// }
+
+.ant-modal-header {
+    background-image: linear-gradient(-90deg,
+            #05e4f8 0%,
+            #03c3fc 62%,
+            #00a1ff 100%),
+        linear-gradient(#ffffff,
+            #ffffff);
+    background-blend-mode: normal,
+        normal;
+}
+
+.anticon-close {
+    color: #fff;
+}
+
+.anticon-close:hover {
+    color: #333;
+}
+
+.ant-calendar-picker {
+    width: 128px;
+    margin-right: 20px;
+}
+
+.ant-modal-title {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.notice-contect {
+
+    table,
+    table tr th,
+    table tr td {
+        border: .05rem solid #ccc;
+    }
+
+    table {
+        text-align: center;
+        border-collapse: collapse;
+        padding: 1px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    video {
+        // background-color: #000;
+        max-width: 100%;
+    }
+}
+
+.displayNone {
+    display: none;
+}
+
+.displayInline {
+    display: inline-block;
+}
+
+.displayBlock {
+    display: block;
+}
+
+//禁止文字选择
+.noselect {
+
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+
+    -khtml-user-select: none;
+    /* Konqueror */
+
+    -moz-user-select: none;
+    /* Firefox */
+
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+
+    user-select: none;
+    /* Non-prefixed version, currently
+    
+    not supported by any browser */
+
+}
+
+i {
+    font-style: normal;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+b {
+    font-weight: 500;
+}
+
+.example {
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    z-index: 2222222;
+    /* background: red; */
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+.ant-modal::-webkit-scrollbar {
+    display: none !important;
+}
+.ant-modal-body::-webkit-scrollbar {
+    display: none !important;
+}
+// .checkbox-choose {
+//     .ant-radio-checked .ant-radio-inner {
+//         border-color: #ccc;
+//         background-image: url('../images/radio-choose.png')
+//     }
+
+//     .ant-radio-checked .ant-radio-inner::after {
+//         opacity: 0;
+//     }
+
+//     .ant-checkbox-checked .ant-checkbox-inner {
+//         border-color: #ccc;
+//         background-image: url('../images/checkbox-choose.png');
+//         background-color: #fff;
+//     }
+
+//     .ant-checkbox-checked .ant-checkbox-inner::after {
+//         opacity: 0;
+//     }
+//     .ant-radio:hover .ant-radio-inner{
+//         border-color: #ccc;
+//     }
+// }
+.textarea{
+    resize:none;
+    
+}
+::-moz-placeholder{color:#999;} //ff
+::-webkit-input-placeholder{color:#999;} //chrome,safari
+:-ms-input-placeholder{color:#999;} //ie10

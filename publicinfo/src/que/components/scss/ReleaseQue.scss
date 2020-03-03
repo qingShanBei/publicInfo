@@ -1,0 +1,20 @@
+.Release-Que-modal{
+    .ant-modal-body{
+        position: relative;
+        max-height: 360px;
+        .notice-create-object{
+            min-height: 200px;
+        }
+        .choose-date{
+         position: absolute;
+         bottom: 32px;
+         left: 42px;
+        }
+        .ant-modal-footer{
+            background-color: #e8eff7;
+        }
+        .choose-date-span{
+            margin-right: 9px;
+        }
+    }
+}

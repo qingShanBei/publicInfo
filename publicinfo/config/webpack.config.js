@@ -46,6 +46,7 @@ const sassModuleRegex = /\.module\.(scss|sass)$/;
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.
 module.exports = function(webpackEnv) {
+  
   const isEnvDevelopment = webpackEnv === 'development';
   const isEnvProduction = webpackEnv === 'production';
 
@@ -384,16 +385,39 @@ module.exports = function(webpackEnv) {
             // "url" loader works like "file" loader except that it embeds assets
             // smaller than specified limit in bytes as data URLs to avoid requests.
             // A missing `test` is equivalent to a match.
+              // {
+              //   test:[/\.bmp$/,/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+              //   loader:require.resolve('url-loader'),
+              //   include:path.resolve(__dirname,'../src'),
+              //     options:{
+              //       limit:1000,
+              //       name:'App_Themes/Skin/images/[name].[hash].[ext]',
+              //       publicPath:'../'
+              //     }
+              // },
+
+              isEnvDevelopment?
+
               {
                 test:[/\.bmp$/,/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
                 loader:require.resolve('url-loader'),
                 include:path.resolve(__dirname,'../src'),
                   options:{
                     limit:1000,
-                    name:'App_Themes/Skin/images/[name].[hash].[ext]',
-                    publicPath:'/'
+                    name:'html/[name].[hash].[ext]',
+                     publicPath:'/'
+                  }
+              }: {
+                test:[/\.bmp$/,/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+                loader:require.resolve('url-loader'),
+                include:path.resolve(__dirname,'../src'),
+                  options:{
+                    limit:1000,
+                    name:'[name].[hash].[ext]',
+                     publicPath:'../../'
                   }
               },
+
             // Process application JS with Babel.
             // The preset includes JSX, Flow, TypeScript, and some ESnext features.
             {
@@ -604,12 +628,20 @@ module.exports = function(webpackEnv) {
       isEnvDevelopment &&
         new WatchMissingNodeModulesPlugin(paths.appNodeModules),
       isEnvProduction &&
+        // new MiniCssExtractPlugin({
+        //   // Options similar to the same options in webpackOptions.output
+        //   // both options are optional
+        //   filename: 'App_Themes/Skin/css/[name]/index.css', //打包模块的css文件放置到这里
+        //   chunkFilename: 'App_Themes/Skin/css/common/[name].css', //打包公共的css放置到这里
+        // }),
+
         new MiniCssExtractPlugin({
-          // Options similar to the same options in webpackOptions.output
-          // both options are optional
-          filename: 'App_Themes/Skin/css/[name]/index.css', //打包模块的css文件放置到这里
-          chunkFilename: 'App_Themes/Skin/css/common/[name].css', //打包公共的css放置到这里
-        }),
+            // Options similar to the same options in webpackOptions.output
+            // both options are optional
+            filename: 'html/[name]/index.css', //打包模块的css文件放置到这里
+            // chunkFilename: 'App_Themes/Skin/css/common/[name].css', //打包公共的css放置到这里
+          }),
+
       // Generate a manifest file which contains a mapping of all asset filenames
       // to their corresponding output file so that tools can pick it up without
       // having to parse `index.html`.

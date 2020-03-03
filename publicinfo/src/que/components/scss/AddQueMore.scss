@@ -1,0 +1,302 @@
+.Add-Edit-message {
+    width: 735px;
+    height: 568px;
+    background-color: #ffffff;
+    // box-shadow: 0px 0px 12px 0px rgba(3, 0, 0, 0.16);
+
+    .ant-modal-body {
+        padding: 24px 28px;
+
+        h2 {
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: #333333;
+        }
+    }
+
+    .Edit-message {
+        padding-left: 33px;
+        font-family: MicrosoftYaHei;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 24px;
+        letter-spacing: 0px;
+        color: #333333;
+
+        span {
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            font-weight: normal;
+            letter-spacing: 0px;
+            color: #ff6600;
+        }
+
+        .Edit-message-last {
+            padding: 8px 0 16px 0;
+        }
+    }
+
+    .message2-title {
+        margin: 16px 0 0 36px;
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 0px;
+        color: #999999;
+
+        span {
+            margin: 0 112px;
+        }
+
+        span:nth-child(2) {
+            margin: 0 0 0 159px;
+        }
+    }
+
+    .message3 {
+        margin: 0 0 0 36px;
+
+        span {
+            display: inline-block;
+            width: 280px;
+            // height: 112px;
+            background-color: #f5f5f5;
+            border-radius: 3px;
+            margin: 16px 0 0 0;
+            padding: 14px 24px;
+        }
+
+        p {
+            margin: 0;
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 26px;
+            letter-spacing: 0px;
+            color: #333333;
+        }
+
+
+        &>i {
+            display: inline-block;
+            width: 23px;
+            height: 14px;
+            margin: 0 12px;
+            background-image: url('../images/edit-message.png');
+            position: relative;
+            top: -20px;
+
+        }
+
+        &>i:nth-child(5) {
+            top: -33px;
+        }
+    }
+
+}
+
+.Add-Edit-input {
+    position: relative;
+    width: 559px;
+    float: left;
+    border-right: 8px solid #d9d9d9;
+    box-sizing: content-box;
+
+    p {
+        display: block;
+        width: 559px;
+        height: 50px;
+        background-color: #ffffff;
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.08);
+        padding: 13px 100px 19px 20px;
+        border: none;
+    }
+
+    &>span {
+        position: relative;
+        float: right;
+        font-family: MicrosoftYaHei;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #0099ff;
+        margin: -50px 24px 0px 0;
+        cursor: pointer;
+        z-index: 1;
+
+        i {
+            vertical-align: baseline;
+            display: inline-block;
+            width: 14px;
+            height: 12px;
+            background-image: url('../images/edit-btn.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 0 1px 0 0;
+        }
+
+        &:hover {
+            color: #ff6600;
+
+            i {
+                background-image: url('../images/edit-btn-hover.png');
+            }
+        }
+
+    }
+
+    textarea {
+        resize: none;
+        border: none;
+        border-style: none;
+        box-shadow: none;
+        outline: none;
+        word-wrap: break-word;
+
+        &:focus {
+            border: none;
+            border-style: none;
+            box-shadow: none;
+        }
+    }
+
+    .text-box {
+        position: relative;
+        border-left: 1px solid #b8b8b8;
+        margin-left: 46px;
+        padding-left: 20px;
+
+        span {
+            display: inline-block;
+            position: absolute;
+            top: 2px;
+            left: -51px;
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #cccccc;
+            width: 40px;
+            text-align: right;
+
+
+        }
+    }
+}
+
+
+.Add-Edit-more {
+    .ant-modal-body {
+        padding: 0;
+    }
+
+}
+
+.ImgOptionMove {
+    display: inline-block;
+    width: 140px;
+    height: 32px;
+    background-color: #9eb6d9;
+    border-radius: 3px;
+
+    p {
+        display: inline-block;
+        width: 46%;
+        text-align: center;
+        line-height: 32px;
+        margin: 0;
+
+        i {
+            display: inline-block;
+            width: 16px;
+            height: 12px;
+            background-image: url('../images/imgUp.png');
+            margin-right: 5px;
+        }
+
+        font-family: MicrosoftYaHei;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    p:nth-child(2){
+        width: 1px;
+        height: 12px;
+        background-color: #ffffff;
+    }
+    p:nth-child(3) {
+        i {
+            background-image: url('../images/imgDown.png');
+        }
+    }
+
+    p:hover {
+        color: #0099ff;
+
+        i {
+            background-image: url('../images/imgUp-hover.png');
+        }
+    }
+
+    p:nth-child(3):hover {
+        i {
+            background-image: url('../images/imgDown-hover.png');
+        }
+    }
+}
+.ImgOptionUp{
+    display: inline-block;
+    width: 140px;
+    height: 32px;
+    background-color: #9eb6d9;
+    border-radius: 3px;
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 32px;
+    i{
+        display: inline-block;
+        line-height: 32px;
+        width: 16px;
+            height: 12px;
+            background-image: url('../images/imgUp.png');
+            margin-right: 5px;
+    }
+}
+
+.ImgOptionUp:hover{
+    color: #0099ff;
+    i{
+        background-image: url('../images/imgUp-hover.png');
+    }
+}
+.ImgOptionDown:hover{
+    color: #0099ff;
+    i{
+        background-image: url('../images/imgDown-hover.png');
+    }
+}
+.ImgOptionDown{
+    i{
+        background-image: url('../images/imgDown.png');
+    }
+}

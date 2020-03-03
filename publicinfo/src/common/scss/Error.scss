@@ -1,0 +1,135 @@
+.frame_radial_bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	background: url(../images/browser-page-bg.png) no-repeat center;
+}
+.frame_browser_tips_container {
+	position: absolute;
+	top: 50%;
+	left: auto;
+	width: 100%;
+	height: 367px;
+	margin-top: -184px;
+}
+.frame_browser_tips_icon {
+	height: 116px;
+	background-image: url(../images/error-page-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.frame_browser_tips_text {
+	width: 681px;
+	margin-top: 36px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 47px; 
+	padding-bottom: 21px;
+	border-bottom: 1px dashed #999999;
+	line-height: 1;
+	color: #333333;
+	font-size: 18px;
+	text-align: center;
+}
+.frame_browser_list_contaier {
+	text-align: center;
+}
+.frame_browser_list_item {
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	width: 152px;
+	height: 128px;
+}
+.frame_browser_list_icon {
+	height: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+}
+// .frame_browser_list_icon.ie { background-image: url(../../Images/Frame/new/ie-logo.png); }
+// .frame_browser_list_icon.safari { background-image: url(../../Images/Frame/new/safari-logo.png); }
+// .frame_browser_list_icon.firefox { background-image: url(../../Images/Frame/new/firefox-logo.png); }
+// .frame_browser_list_icon.chrome { background-image: url(../../Images/Frame/new/chrome-logo.png); }
+// .frame_browser_list_icon.b360 { background-image: url(../../Images/Frame/new/360-logo.png); }
+// .frame_browser_list_item_name {
+// 	margin-top: 13px;
+// 	line-height: 1;
+// 	font-size: 14px;
+// 	color: #0099ff;
+// }
+.frame_error_tips_container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 810px;
+	height: 234px;
+	margin-top: -117px;
+	margin-right: auto;
+	margin-left: -405px;
+	background-image: url(../images/error-page-bg.png);
+	background-repeat: no-repeat;
+	background-position: left 16px;
+}
+.frame_error_tips_block {
+	display: table-cell;
+	width: 810px;
+	height: 229px;
+	padding-left: 458px;
+	vertical-align: middle;
+}
+.frame_error_tips_title {
+	margin-bottom: 28px;
+	line-height: 1;
+	color: #808b94;
+	font-size: 46px;
+}
+.frame_error_tips_code,
+.frame_error_tips_reason {
+	font-size: 12px;
+	color: #808b94;
+	line-height: 1;
+}
+.frame_error_tips_reason {
+	padding-bottom: 10px;
+	line-height: 20px;
+	word-break: break-all;
+}
+.frame_error_tips_code {
+	min-height: 39px;
+	margin-bottom: 6px;
+}
+.frame_error_recommend {
+	margin-bottom: 12px;
+	line-height: 1;
+	font-size: 12px;
+	color: #333333;
+	font-weight: bold;
+}
+.frame_error_recommend_content {
+	font-size: 12px;
+	color: #808b94;
+}
+.frame_error_btn {
+	width: 90px;
+	height: 32px;
+	margin-top: 16px;
+	outline: none;
+	border: none;
+	border: 1px solid #003253;
+	border-radius: 3px;
+	font-size: 14px;
+	color: #fff;
+	background-color: #0099ff;
+	box-shadow: 2px 5px 5px -2px #6cc4ff inset;
+}
+.frame_error_btn:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+/* 错误提示页面 end */

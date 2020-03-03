@@ -1,0 +1,769 @@
+.QueEdit-main {
+    position: relative;
+    width: 1200px;
+    min-height: 478px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    margin: 0 auto;
+
+    .QueEdit-left {
+        float: left;
+        width: 300px;
+        min-height: 363px;
+        background-color: #ffffff;
+        border-radius: 12px;
+        margin-right: 16px;
+        position: relative;
+        z-index: 10;
+
+        .QueEdit-left-ul {
+            li {
+                display: inline-block;
+                width: 110px;
+                height: 40px;
+                background-image: url('../images/QueEdit-left.png');
+                background-size: 100% 100%;
+                text-align: center;
+                line-height: 28px;
+                margin-top: 28px;
+                color: #0e95ed;
+                cursor: pointer;
+
+            }
+
+            li:nth-child(1) {
+                margin: 28px 16px 0 32px;
+            }
+
+            .QueEdit-left-choose {
+                background-image: url('../images/QueEdit-left-choose.png');
+                background-position: center;
+                background-size: 110% 100%;
+                color: #fff;
+            }
+        }
+
+        .QueEdit-left-model {
+            span {
+                position: relative;
+                display: inline-block;
+                width: 84px;
+                height: 88px;
+                margin: 20px 0 30px 44px;
+                text-align: center;
+                cursor: pointer;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                // line-height: 50px;
+                letter-spacing: 0px;
+                color: #333333;
+
+                i {
+                    display: block;
+                    width: 68px;
+                    height: 68px;
+                    margin-left: 10px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+
+                }
+            }
+
+            span:nth-child(1) i {
+                background-image: url('../images/QueEdit-model1.png');
+
+            }
+
+            span:nth-child(2) i {
+                background-image: url('../images/QueEdit-model2.png');
+
+            }
+
+            span:nth-child(3) i {
+                background-image: url('../images/QueEdit-model3.png');
+
+            }
+
+            span:nth-child(4) i {
+                background-image: url('../images/QueEdit-model4.png');
+
+            }
+
+        }
+
+        .fixed-ul {
+            padding: 24px;
+            max-height: 450px;
+            overflow-y: auto;
+
+            li {
+                margin-bottom: 17px;
+
+                a {
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    color: #333333;
+                }
+            }
+        }
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+    }
+
+    .QueEdit-right {
+        float: right;
+        width: 884px;
+        min-height: 400px;
+        background-color: #ffffff;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.03);
+        border-radius: 12px;
+
+        .QueEdit-right-top {
+            position: relative;
+            margin: 17px 32px;
+            border-bottom: 1px dashed #ccc;
+            line-height: 24px;
+
+            .QueEdit-right-ul1 {
+                li {
+                    float: left;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #0099ff;
+                    line-height: 26px;
+                    cursor: pointer;
+
+                    b {
+                        display: inline-block;
+                        width: 1px;
+                        height: 12px;
+                        background-color: #c9e1f0;
+                        margin: 1px 15px 0 15px;
+                        vertical-align: text-bottom;
+                    }
+
+                    i {
+                        display: inline-block;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 12px;
+                        height: 12px;
+                        vertical-align: middle;
+                        margin-right: 3px;
+                        background-image: url('../images/add.png');
+                    }
+
+                    span {
+                        text-decoration: underline;
+                    }
+                }
+
+                li:hover {
+                    color: #ff6600;
+
+                    i {
+                        background-image: url('../images/add-hover.png');
+                    }
+
+                }
+
+                li:nth-child(3) {
+                    i {
+                        width: 14px;
+                        height: 16px;
+                        background-image: url('../images/addMore.png');
+                        margin-top: -1px;
+                    }
+
+
+                }
+
+                li:nth-child(3):hover {
+                    i {
+                        background-image: url('../images/addMore-hover.png');
+                    }
+                }
+            }
+
+            .QueEdit-right-ul2 {
+                position: absolute;
+                top: -4px;
+                right: 0;
+
+                li {
+                    cursor: pointer;
+                    margin-right: 12px;
+                    float: left;
+                    line-height: 24px;
+                    width: 72px;
+                    height: 24px;
+                    text-align: center;
+                    background-image: linear-gradient(90deg,
+                            #0fc1fc 0%,
+                            #1da4fe 100%),
+                        linear-gradient(#ffffff,
+                            #ffffff);
+                    background-blend-mode: normal,
+                        normal;
+                    border-radius: 12px;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #ffffff;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                }
+
+                li:nth-child(3) {
+                    background-image: linear-gradient(90deg,
+                            #23ba00 0%,
+                            #12d033 38%,
+                            #00e566 100%),
+                        linear-gradient(#ffffff,
+                            #ffffff);
+                    margin-right: 3px;
+
+                }
+            }
+        }
+
+        .QueEidt-tilte {
+            position: relative;
+            padding: 0 50px;
+            margin-left: 50%;
+            transform: translate(-50%, 0);
+            display: inline-block;
+            height: 42px;
+            background-color: #ffffff;
+            border-radius: 3px;
+            border: solid 1px #bac7d9;
+            line-height: 42px;
+            text-align: center;
+            font-family: MicrosoftYaHei;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            // line-height: 16px;
+            letter-spacing: 0px;
+            color: #0170cc;
+            max-width: 80%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .checkbox-choose {
+            margin: 15px 14px 10px 10px;
+        }
+
+        .QueEidt-QtnExplanation {
+
+            margin: 16px 82px;
+
+            .QueEidt-QtnExplanation1 {
+                width: 720px;
+                background-color: #f5f5f5;
+                border-radius: 3px;
+                padding: 14px 23px;
+                border: 0;
+            }
+
+        }
+
+        .choose-input {
+            width: 160px;
+            height: 24px;
+            background-color: #ffffff;
+            border-radius: 3px;
+            border: solid 1px #bac7d9;
+        }
+
+        .checkbox-title-img {
+            width: 168px;
+            height: 108px;
+
+            margin: 10px 20px 0px 20px;
+        }
+
+        .checkbox-li {
+            float: left;
+            display: inline-block;
+            padding: 0 15px;
+
+        }
+
+
+        textarea {
+            margin-top: 15px;
+            resize: none;
+        }
+
+        .QueEdit-content-li {
+            border: 1px dashed #ccc;
+            border-bottom: none;
+            padding: 20px;
+            position: relative;
+        }
+
+        .QueEdit-content {
+            margin: 10px 32px 60px 32px;
+
+            .QueEdit-content-li:first-child {
+                i {
+                    width: 13px;
+                }
+            }
+
+            .QueEdit-content-li:last-child {
+                border-bottom: 1px dashed #ccc;
+
+                i {
+                    width: 13px;
+                }
+            }
+
+            .checkbox-ul {
+                padding: 0px 0 5px 0;
+            }
+        }
+
+
+        .choose-change {
+            float: right;
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #0099ff;
+            position: absolute;
+            bottom: 8px;
+            right: 10px;
+
+            span {
+                cursor: pointer;
+                margin-right: 19px;
+            }
+
+            i {
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                vertical-align: middle;
+                margin: -3px 3px 0 0;
+            }
+
+            span:hover {
+                color: #ff6600;
+            }
+
+            span:nth-child(1) {
+                i {
+                    background-image: url('../images/edit.png');
+                }
+
+                &:hover i {
+                    background-image: url('../images/edit-hover.png');
+                }
+            }
+
+            .collection {
+                i {
+                    background-image: url('../images/collection.png');
+                }
+
+                &:hover i {
+                    background-image: url('../images/collection-hover.png');
+                }
+
+            }
+
+            .uncollection {
+                i {
+                    background-image: url('../images/uncollection.png');
+                }
+
+                &:hover i {
+                    background-image: url('../images/uncollection-hover.png');
+                }
+
+
+            }
+
+            .del {
+                i {
+                    background-image: url('../images/del.png');
+                }
+
+                &:hover i {
+                    background-image: url('../images/del-hover.png');
+                }
+            }
+
+            .up {
+                i {
+                    background-image: url('../images/Edit-Up.png');
+                }
+
+                &:hover i {
+                    background-image: url('../images/Edit-Up-hover.png');
+                }
+            }
+
+            .down {
+                i {
+                    background-image: url('../images/Edit-down.png');
+                }
+
+                &:hover i {
+                    background-image: url('../images/Edit-down-hover.png');
+                }
+            }
+        }
+
+    }
+}
+
+.QueEidt-left-popup {
+    position: absolute;
+    width: 903px;
+    height: 528px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.32);
+    border: solid 1px #cccccc;
+    top: 107px;
+    left: 150px;
+    display: none;
+
+    .left-popup-ul {
+        width: 900px;
+        height: 48px;
+        background-color: #ffffff;
+        box-shadow: inset 0px -1px 0px 0px #c3ddf1;
+
+
+        li {
+            height: 100%;
+            line-height: 48px;
+
+            float: left;
+
+            span {
+                display: inline-block;
+                font-family: MicrosoftYaHei-Bold;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #333333;
+                margin: 0 24px;
+                cursor: pointer;
+                padding: 0 12px;
+                height: 48px;
+
+                &:hover {
+                    color: #0079d6;
+                }
+            }
+
+            .QueEdit-li-choose {
+                color: #0079d6;
+                border-bottom: 2px solid #0079d6;
+            }
+
+            b {
+                display: inline-block;
+                width: 1px;
+                height: 12px;
+                background-color: #999999;
+            }
+        }
+
+        li:nth-child(3) {
+            float: right;
+            width: 12px;
+            height: 12px;
+            margin: 18px;
+            background-image: url('../images/QueEdit-close.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            cursor: pointer;
+
+            &:hover {
+                background-image: url('../images/QueEdit-close-hover.png');
+            }
+        }
+
+        &>b {
+            display: inline-block;
+            background-color: #fff;
+            width: 16px;
+            height: 16px;
+            position: relative;
+            top: 15px;
+            left: -254px;
+            transform: rotateZ(45deg);
+            border-bottom: solid 1px #cccccc;
+            border-left: solid 1px #cccccc;
+        }
+    }
+
+
+}
+
+.QueEidt-left-popup1 {
+    display: inline-block;
+}
+
+.Que-Collect-mian {
+    width: 880px;
+    max-height: 418px;
+    min-height: 418px;
+    overflow-y: auto;
+    margin-left: 20px;
+
+    .QueEdit-right {
+        .checkbox-li {
+            padding: 0 7px;
+        }
+
+        .QueEdit-content {
+            margin: 0 23px 0 0;
+        }
+
+        .QueEdit-content-li {
+            border: none;
+            padding: 0 0 0 4px;
+            margin: 0 0 9px 52px;
+            background: #f5f5f5;
+
+            .checkbox-TopicContent {
+                width: 810px;
+                padding: 12px 0;
+                background-color: #f5f5f5;
+                border-radius: 3px;
+                position: relative;
+            }
+
+            .QueEdit-add-collect {
+                display: inline-block;
+                width: 14px !important;
+                height: 14px;
+                background-image: url('../images/checkbox-unchoose.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+                position: absolute;
+                top: 17px;
+                left: -33px;
+            }
+
+            .QueEdit-unadd-collect {
+                display: inline-block;
+                width: 14px !important;
+                height: 14px;
+                // background-image: url('../images/checkbox-unchoose.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                cursor: pointer;
+                position: absolute;
+                top: 17px;
+                left: -33px;
+                background-image: url('../images/checkbox-choose.png');
+            }
+        }
+    }
+}
+
+.Quemain-div-popup {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.checkbox-TopicContent-span {
+    display: inline-block;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #333333;
+    max-width: 750px;
+}
+
+.EditQue-del-collect {
+    float: right;
+    width: 14px;
+    height: 16px;
+    margin: 3px 0 0 0;
+    background-image: url('../images/del-collect.png');
+    cursor: pointer;
+
+    &:hover {
+        background-image: url('../images/del-collect-hover.png')
+    }
+}
+
+.EditQue-down-collect {
+    float: right;
+    width: 14px;
+    height: 16px;
+    margin: 3px 16px 0 18px;
+    background-image: url('../images/up-collect.png');
+    transition: 1s all;
+    cursor: pointer;
+
+    &:hover {
+        background-image: url('../images/up-collect-hover.png');
+    }
+}
+
+.EditQue-up-collect {
+    float: right;
+    width: 14px;
+    height: 16px;
+    margin: 3px 16px 0 18px;
+    background-image: url('../images/down-collect.png');
+    transition: 1s all;
+    cursor: pointer;
+
+    &:hover {
+        background-image: url('../images/down-collect-hover.png');
+    }
+}
+
+.QueEdit-footer {
+    height: 56px;
+    background-color: #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #c3ddf1;
+    line-height: 56px;
+    padding: 0 8px 0 25px;
+
+    .QueEdit-footer-span1 {
+        font-family: MicrosoftYaHei;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #999999;
+
+        b {
+            color: #ff0000;
+        }
+    }
+
+    .QueEdit-footer-span2 {
+        margin: 13px 0;
+        float: right;
+        display: inline-block;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        font-family: MicrosoftYaHei;
+        font-size: 16px;
+        background-image: linear-gradient(90deg,
+                #0fc1fc 0%,
+                #1da4fe 100%),
+            linear-gradient(#f2f2f2,
+                #f2f2f2);
+        background-blend-mode: normal,
+            normal;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .QueEdit-footer-span3 {
+        margin: 13px 12px;
+        float: right;
+        display: inline-block;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        font-family: MicrosoftYaHei;
+        font-size: 16px;
+        background-image: linear-gradient(90deg,
+                #00e566 0%,
+                #12d033 62%,
+                #23ba00 100%),
+            linear-gradient(#f2f2f2,
+                #f2f2f2);
+        background-blend-mode: normal,
+            normal;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
+
+.Que-Collect-mian .QueEdit-right .QueEdit-content .QueEdit-content-li:last-child {
+    border: none;
+
+    i {
+        width: 14px;
+    }
+}
+
+.Que-Collect-mian .QueEdit-right .QueEdit-content .QueEdit-content-li:first-child i {
+    width: 14px;
+}
+.QueEidt-tilte1{
+    position: absolute;
+    top: 61px;
+    margin: 0 70px;
+    input{
+        width: 740px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-family: MicrosoftYaHei;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #0170cc;
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: solid 1px #bac7d9;
+    // border: 0;
+    // opacity: 0;
+    }
+}

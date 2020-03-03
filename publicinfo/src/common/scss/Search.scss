@@ -1,0 +1,47 @@
+.search-div {
+    display: inline-block;
+    position: relative;
+    .search-input {
+        padding: 0 54px 0 8px;
+        width: 220px;
+        height: 28px;
+        background-color: #ffffff;
+        border-radius: 14px;
+        border: solid 1px #bac7d9;
+        line-height: 28px;
+    }
+
+    .search-img {
+        display: inline-block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 6px;
+        right: 18px;
+        cursor: pointer;
+        background: url('../images/搜索图标-初始.png');
+    }
+    .search-img:hover{
+        background: url('../images/搜索图标-悬停.png');
+    }
+    input:focus {
+        border: 1px solid #91BBFE;
+        outline: none;
+    }
+    .search-close{
+        display: inline-block;
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        top: 8px;
+        right: 38px;
+        cursor: pointer;
+        background-image: url('../images/search-close.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+    }
+   
+
+}

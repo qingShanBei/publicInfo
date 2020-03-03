@@ -1,0 +1,994 @@
+.QueList-div {
+    position: relative;
+    width: 1200px;
+    min-height: 678px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    margin: 0 auto;
+
+    .Que-create-button {
+        margin: 24px 0 0 36px;
+        display: inline-block;
+        width: 130px;
+        height: 28px;
+        text-align: center;
+        line-height: 28px;
+        font-family: MicrosoftYaHei;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #ffffff;
+        background-image: linear-gradient(90deg,
+                #0088af 0%,
+                #808358 0%,
+                #ff7e00 0%,
+                #ffb31f 100%),
+            linear-gradient(#ffffff,
+                #ffffff);
+        background-blend-mode: normal,
+            normal;
+        border-radius: 14px;
+
+        i {
+            margin: -2px 2px 0 2px;
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url('../images/Que-cracte.png');
+            background-position: center;
+            background-size: contain;
+            vertical-align: middle;
+
+        }
+    }
+
+    .Que-create-button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .QueList-Seacch {
+        float: right;
+        margin: 24px 36px 0 0;
+        z-index: 4;
+        position: relative;
+    }
+
+    .QueList-top-border {
+        display: inline-block;
+        margin: 16px 36px;
+        width: 1128px;
+        height: 1px;
+        border-bottom: dashed 1px #cccccc;
+    }
+
+    .QueList-div-pupop {
+        display: none;
+        width: 100%;
+        height: 100%;
+        // background-color: red;
+        position: absolute;
+        top: 0;
+        z-index: 3;
+    }
+
+    .QueList-type {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        z-index: 4;
+
+        li {
+            display: inline-block;
+            width: 128px;
+            height: 43px;
+            line-height: 32px;
+            background-image: url('../images/QueList-type-unchoose.png');
+            background-position: center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            font-family: MicrosoftYaHei;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #0e95ed;
+            margin: 0 24px 0 0;
+
+        }
+
+        li:last-child {
+            margin: 0;
+        }
+
+        li:hover {
+            background-image: url('../images/QueList-type-hover.png');
+        }
+
+        .QueList-choose-type {
+            background-image: url('../images/QueList-type-choose.png');
+            color: #ffffff;
+
+        }
+
+        .QueList-choose-type:hover {
+            background-image: url('../images/QueList-type-choose.png');
+
+        }
+    }
+
+    .QueList-list-ul {
+        margin: 28px 0 20px 55px;
+
+        b {
+            font-weight: 500;
+        }
+
+        .QueList-list-li {
+            display: inline-block;
+            position: relative;
+            width: 342px;
+            height: 334px;
+            background-color: #f5f5f5;
+            border-radius: 0px 20px 0px 0px;
+            background-image: url('../images/Alreadylist-bg.png');
+            background-position: center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin: 0 32px 32px 0;
+            float: left;
+
+            .SharedQtnUseCount {
+                position: relative;
+                width: 170px;
+                /* float: right; */
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #999999;
+                margin: 0px;
+                left: 172px;
+                top: -20px;
+                display: inline-block;
+            
+            
+                b{
+                    color: #ff0000;
+                    margin: 0;
+                }
+            }
+
+            span {
+                display: block;
+                margin: 18px 0 0 28px;
+                line-height: 1;
+
+                b:nth-child(1) {
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #999999;
+                    margin-right: 11px;
+                    z-index: 1;
+                }
+                .obj-b{
+                    margin: 0;
+                    // position: relative;
+                    z-index: 5;
+                    .QueList-list-obj {
+
+                        display: inline-block;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        margin: 0 0 0 3px;
+                        position: absolute;
+                        z-index: 4;
+                        font-style: normal;
+                        bottom: 30px;
+                        right: -99px;
+                    
+    
+                       
+                    }
+                    .bg-i {
+                        display: none;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #fff;
+                        position: absolute;
+                        top: -16px;
+                        left: -36px;
+                        z-index: 4;
+                        transform: rotateZ(45deg);
+                    }
+                }
+                
+
+                // .QueList-list-obj:hover {
+                //     background-image: url('../images/obj-message-hover.png');
+                // }
+
+                .QueList-list-close {
+                    position: relative;
+                    z-index: 4;
+                    display: inline-block;
+                    width: 64px;
+                    height: 19px;
+                    background-image: url('../images/QueList-list-close.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    vertical-align: middle;
+                    cursor: pointer;
+                }
+
+                .QueList-list-open {
+                    position: relative;
+                    z-index: 4;
+                    display: inline-block;
+                    width: 64px;
+                    height: 19px;
+                    background-image: url('../images/QueList-list-open.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    vertical-align: middle;
+                    cursor: pointer;
+
+                }
+            }
+
+            span:nth-child(1) {
+                vertical-align: bottom;
+                margin: 18px 45px 40px 28px;
+                width: 272px;
+                height: 40px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 24px;
+                letter-spacing: 0px;
+                color: #333333;
+                position: relative;
+
+                b {
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 0;
+                    line-height: 24px;
+                    color: #333333;
+                }
+
+            }
+
+            span:nth-child(2) {
+                margin: 0 11px 0 28px;
+
+                b:nth-child(1) {
+                    display: inline-block;
+                }
+
+
+                .obj-b-all{
+                    color: #333333;
+                    margin-right: 1px; display: inline-block;
+                    max-width: 212px;
+                    margin: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    line-height: 1;
+                    vertical-align: top;
+                }
+                .obj-b-some{
+                    font-family: MicrosoftYaHei;
+                    text-decoration: underline;
+                    font-size: 14px;
+                    font-weight: normal;
+                    letter-spacing: 0px;
+                    color: #0099ff;
+                    margin-right: 1px;
+                    cursor: pointer;
+                    display: inline-block;
+                    max-width: 212px;
+                    margin: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    line-height: 1;
+                    vertical-align: top;
+                    position: relative;
+                    z-index: 5;
+                }
+                .obj-b2{
+                    text-decoration: none;
+                }
+
+            }
+
+            .QueList-list-message {
+                position: absolute;
+                right: 45px;
+                bottom: 25px;
+                display: inline-block;
+                width: 120px;
+                text-align: center;
+                line-height: 30px;
+                height: 30px;
+                background-image: url('../images/QueList-list-message.png');
+                // background-position: center;
+                // background-size: contain;
+                // background-repeat: no-repeat;
+                border-radius: 15px;
+                font-family: MicrosoftYaHei;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #ffffff;
+                z-index: 4;
+
+            }
+
+            .QueList-list-message:hover {
+                opacity: 0.9;
+                cursor: pointer;
+            }
+
+            .QueList-list-do:hover {
+                background-image: url('../images/QueList-list-do-hover.png');
+            }
+
+            .QueList-list-do {
+                position: absolute;
+                right: 18px;
+                bottom: 25px;
+                display: inline-block;
+                width: 8px;
+                height: 23px;
+                background-image: url('../images/QueList-list-do.png');
+                margin: 0;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                z-index: 4;
+
+
+
+                .QueList-do-ul {
+                    // display: inline-block;
+                    position: absolute;
+                    top: -195px;
+                    right: -91px;
+                    width: 120px;
+                    height: 178px;
+                    background-color: #ffffff;
+                    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+                    line-height: 1;
+                    cursor: default;
+                    z-index: 1;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #333333;
+
+                    li {
+                        display: inline-block;
+                        margin: 15px 0 0 20px;
+                        cursor: pointer;
+                        padding: 0;
+                    }
+
+
+                    li:nth-child(2) {
+                        margin: 0 0 0 12px;
+                        padding: 0;
+                        width: 96px;
+                        height: 1px;
+                        background-color: #e6e6e6;
+                        cursor: default;
+                    }
+
+
+
+                    li:nth-child(4) {
+                        margin: 17px 0 0 12px;
+                        width: 96px;
+                        height: 1px;
+                        background-color: #e6e6e6;
+                        cursor: default;
+                    }
+
+                    li:nth-child(7) {
+                        margin: 0;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #fff;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 22px;
+                        transform: rotateZ(45deg);
+                        cursor: default;
+
+                    }
+
+                }
+            }
+
+            .QueList-list-objlist {
+               
+                width: 484px;
+                max-height: 280px;
+                background-color: #ffffff;
+                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+                z-index: 2;
+                left: -73px;
+                bottom: 32px;
+                padding-bottom: 13px;
+                overflow-y: auto;
+                li {
+                    margin: 12px 0 0 0;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+
+                    i {
+                        display: inline-block;
+                        width: 6px;
+                        height: 8px;
+                        background-image: url('../images/obj-list-i.png');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        margin: 0 8px 0 20px;
+                    }
+
+                    span {
+                        display: inline-block;
+                        margin: 0 4px 0 0;
+                        color: #720000;
+                        line-height: 26px;
+                        // width: 64px;
+                    }
+
+                    b {
+                        display: inline-block;
+                        width: 400px;
+                        line-height: 26px;
+                        vertical-align: top;
+                        color: #666666;
+                        white-space: normal;
+                    }
+                }
+
+
+            }
+
+            .QueList-list-do：hover {
+                background-image: url('../images/QueList-list-do-hover.png');
+                cursor: pointer;
+            }
+
+        }
+
+        .QueList-list-liold {
+            background-image: url('../images/Unissued-list-bg.png');
+
+            .QueList-list-do {
+                .QueList-do-ul {
+                    width: 120px;
+                    height: 96px;
+                    top: -114px;
+
+                    li:nth-child(4) {
+                        margin: 0;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #fff;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 22px;
+                        transform: rotateZ(45deg);
+                        cursor: default;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .QueList-list-Unissued {
+        .QueList-Unissued-li {
+            background-image: url('../images/Unissued-list-bg.png');
+
+            span:nth-child(2) {
+                margin: 0 11px 0 28px;
+
+                b:nth-child(1) {
+                    display: inline-block;
+                }
+
+                b:nth-child(2) {
+                    color: #333333;
+                }
+
+                b:nth-child(3) {
+                    color: #333333;
+                }
+
+                i {
+                    color: red;
+                }
+
+            }
+
+
+            .QueList-list-message {
+                background-image: url('../images/unissued-button.png');
+            }
+
+            .QueList-list-do {
+                .QueList-do-ul {
+                    width: 120px;
+                    height: 96px;
+                    top: -114px;
+
+                    li:nth-child(4) {
+                        margin: 0;
+                        width: 10px;
+                        height: 10px;
+                        background-color: #fff;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 22px;
+                        transform: rotateZ(45deg);
+                        cursor: default;
+                    }
+
+
+                }
+            }
+
+        }
+    }
+
+}
+
+.create-QueModal {
+    .ant-modal-body {
+        span {
+            display: inline-block;
+            width: 228px;
+            height: 160px;
+            border-radius: 10px;
+            font-family: MicrosoftYaHei;
+            font-size: 16px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            cursor: pointer;
+        }
+
+        span:nth-child(1) {
+            background-image: url('../images/create-que1.png');
+            margin: 20px 42px 36px 140px;
+
+            &:hover {
+                background-image: url('../images/create-que1-hover.png');
+            }
+        }
+
+        span:nth-child(2) {
+            background-image: url('../images/create-que2.png');
+
+            &:hover {
+                background-image: url('../images/create-que2-hover.png');
+            }
+
+            margin: 20px 42px 36px 0;
+        }
+
+        span:nth-child(3) {
+            background-image: url('../images/create-que3.png');
+            margin: 20px 42px 36px 140px;
+
+            &:hover {
+                background-image: url('../images/create-que3-hover.png');
+            }
+
+        }
+
+        span:nth-child(4) {
+            background-image: url('../images/create-que4.png');
+            margin: 20px 42px 36px 0;
+
+            &:hover {
+                background-image: url('../images/create-que4-hover.png');
+            }
+
+        }
+
+
+    }
+}
+
+.create-QueModal1,
+.create-QueModal2,
+.create-QueModal3 {
+    .createQue-Seacch {
+        width: 100%;
+        margin-bottom: 12px;
+
+        .search-div {
+            float: right;
+            margin-right: 20px;
+        }
+    }
+
+    .ant-modal-body {
+        height: 500px;
+        overflow-y: scroll;
+        padding: 20px 0;
+
+        table {
+            th {
+                height: 28px;
+                background-color: #f5f5f5;
+                background-color: #f5f5f5;
+                text-align: center;
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #647e86;
+            }
+        }
+    }
+
+}
+
+.create-QueModal1,
+.create-QueModal3 {
+    table {
+        th:nth-child(1) {
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        tbody {
+            tr {
+                background-color: #ffffff;
+                box-shadow: 0px 1px 0px 0px #ebebeb;
+            }
+
+            tr:nth-child(2n) {
+                background-color: #f5f5f5;
+            }
+
+            td {
+                height: 48px;
+
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #333333;
+                text-align: center;
+                position: relative;
+            }
+
+            td:nth-child(1) {
+                i {
+                    display: inline-block;
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    background-color: #bcced6;
+                    border-radius: 2px;
+                    top: 21px;
+                    left: 20px;
+                }
+
+                span {
+                    display: inline-block;
+                    width: 380px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin: 0 0 0 40px;
+                    line-height: 48px;
+                }
+
+                text-align: left;
+            }
+
+            td:nth-child(3) {
+                color: #999999;
+            }
+
+            td:nth-child(4) {
+                span {
+                    display: inline-block;
+                    width: 56px;
+                    height: 24px;
+                    background-color: #ffffff;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-image-source: linear-gradient(90deg,
+                            #008aff 0%,
+                            #40cbff 100%);
+                    border-image-slice: 1;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #0099ff;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.create-QueModal3 {
+    table {
+        tbody {
+            td:nth-child(3) {
+                color: #999;
+            }
+        }
+    }
+}
+
+.create-QueModal2 {
+    .ant-modal-body {
+        height: 560px;
+    }
+
+    table {
+        th:nth-child(1) {
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        tbody {
+
+            tr {
+                background-color: #ffffff;
+                box-shadow: 0px 1px 0px 0px #ebebeb;
+            }
+
+            tr:nth-child(2n) {
+                background-color: #f5f5f5;
+            }
+
+            td {
+                height: 48px;
+
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #333333;
+                text-align: center;
+                position: relative;
+            }
+
+            td:nth-child(1) {
+                i {
+                    display: inline-block;
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    background-color: #bcced6;
+                    border-radius: 2px;
+                    top: 21px;
+                    left: 20px;
+                }
+
+                span {
+                    display: inline-block;
+                    width: 330px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    margin: 0 0 0 40px;
+                    line-height: 48px;
+                }
+
+                text-align: left;
+            }
+
+            td:nth-child(5) {
+                color: #999999;
+            }
+
+            td:nth-child(6) {
+                span {
+                    display: inline-block;
+                    width: 56px;
+                    height: 24px;
+                    background-color: #ffffff;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-image-source: linear-gradient(90deg,
+                            #008aff 0%,
+                            #40cbff 100%);
+                    border-image-slice: 1;
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #0099ff;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.create-QueModal6 {
+    .ant-modal-body {
+        height: 600px;
+        overflow-y: scroll;
+
+        .ant-radio-group {
+            min-width: 70%;
+        }
+
+        // .ant-checkbox-group{
+        //     width: 100%;
+        // }
+        input {
+            padding-left: 8px;
+            margin-left: 5px;
+        }
+
+        .checkbox-QtnName {
+            font-family: MicrosoftYaHei;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 16px;
+            letter-spacing: 0px;
+            color: #0170cc;
+            text-align: center;
+            margin: 16px 0 10px 0;
+        }
+
+        .checkbox-QtnExplanation {
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: #333333;
+            margin: 40px 100px;
+        }
+
+        ant-radio-group .checkbox-TopicContent {
+            margin-top: 10px;
+        }
+
+        .ant-radio-checked .ant-radio-inner {
+            border-color: #ccc;
+            background-image: url('../images/radio-choose.png')
+        }
+
+        .ant-radio-checked .ant-radio-inner::after {
+            opacity: 0;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner {
+            border-color: #ccc;
+            background-image: url('../images/checkbox-choose.png');
+            background-color: #fff;
+        }
+
+        .ant-checkbox-checked .ant-checkbox-inner::after {
+            opacity: 0;
+        }
+    }
+}
+
+.checkbox-img {
+    display: block;
+    width: 136px;
+    height: 85px;
+    margin: 10px 0px 0 27px;
+
+}
+
+.checkbox-li {
+    margin: 0;
+    display: inline-block;
+}
+
+.checkbox-title-img {
+    display: block;
+    width: 250px;
+    height: 200px;
+    float: left;
+    margin: 10px 40px 20px 20px;
+}
+
+.checkbox-ul {
+    padding: 0px 0 10px 0;
+}
+
+.checkbox-choose {
+    margin: 15px 30px 10px 10px;
+    display: inline-block;
+}
+
+.checkbox-textarea {
+    margin: 10px 0 0 22px;
+}
+
+.radio-text {
+    max-width: 360px;
+    word-wrap: break-word;
+    word-break: normal;
+    white-space: nowrap;
+}
+
+.radio-main {
+    margin: 20px 0;
+}
+
+.runningPng {
+    display: inline-block;
+    position: absolute;
+    width: 120px;
+    height: 101px;
+    background: url("../images/QueRunning.png");
+    bottom: 74px;
+    right: 0;
+
+}
+
+.finishPng {
+    display: inline-block;
+    position: absolute;
+    width: 120px;
+    height: 101px;
+    background: url("../images/QueFinish.png");
+    bottom: 74px;
+    right: 0;
+}
+.empty-que-bg{
+    display: inline-block;
+    width: 298px;
+    height: 79px;
+    background-image: url('../images/empty.png');
+    margin: 100px 1px 0 440px;
+}
